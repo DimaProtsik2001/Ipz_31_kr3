@@ -62,5 +62,7 @@ fun MyApp()
 @Composable
 fun Item(index: Int)
 {
+    var isActive by remember { mutableStateOf(false) }
+    val cardHeight = if (isActive) 225.dp else 100.dp
 
 }
