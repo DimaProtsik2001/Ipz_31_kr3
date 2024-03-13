@@ -48,6 +48,14 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun MyApp()
 {
+    LazyColumn(
+        modifier = Modifier.padding(16.dp),
+        verticalArrangement = Arrangement.spacedBy(16.dp)
+    ) {
+        items(20) { index ->
+            Item(index = index)
+        }
+    }
 
 }
 
