@@ -70,11 +70,19 @@ fun Item(index: Int)
         modifier = Modifier
             .fillMaxWidth()
             .height(cardHeight)
-            .clickable { isExpanded = !isExpanded },
+            .clickable { isActive = !isActive },
     ) {
         Column(
             modifier = Modifier.padding(16.dp)
         ) {
+            Text()
+            Image(
+
+            )
+            if (isActive)
+            {
+                Text()
+            }
 
         }
     }
